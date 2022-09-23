@@ -1,2 +1,2 @@
-sys-fs/mdev-bb ~amd64
-sys-fs/mdev-like-a-boss ~amd64
+#sys-fs/mdev-bb ~amd64
+#sys-fs/mdev-like-a-boss ~amd64

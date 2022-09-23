@@ -1,0 +1,14 @@
+*/* CPU_FLAGS_X86: aes avx avx2 avx512f avx512dq avx512cd avx512bw avx512vl avx512vbmi f16c fma3 mmx mmxext pclmul popcnt rdrand sha sse sse2 sse3 sse4_1 sse4_2 ssse3
+
+sys-apps/util-linux -su 
+sys-apps/busybox static mdev
+sys-fs/udev -*
+
+# required by sys-apps/busybox-1.34.1::gentoo[static]
+# required by busybox (argument)
+>=virtual/libcrypt-2 static-libs
+# required by virtual/libcrypt-2::gentoo
+# required by sys-apps/busybox-1.34.1::gentoo
+# required by busybox (argument)
+>=sys-libs/libxcrypt-4.4.28-r1 static-libs
+

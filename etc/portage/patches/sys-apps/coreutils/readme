@@ -1,0 +1,4 @@
+https://github.com/jarun/advcpmv
+get gui cp,mv with cp -g 
+coreutils version from https://packages.gentoo.org/packages/sys-apps/coreutils
+pull patch file into this folder to auto apply

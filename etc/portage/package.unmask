@@ -1,1 +1,2 @@
+#tried to get rid of dbus but firefox.tar binary needs it so its back
 #x11-libs/gtk+::mv

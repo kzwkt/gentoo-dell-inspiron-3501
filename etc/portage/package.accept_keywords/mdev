@@ -1,3 +1,4 @@
 ##tested mdev
-sys-fs/mdev-bb ~amd64
-sys-fs/mdev-like-a-boss ~amd64
+#using foo overlay
+#sys-fs/mdev-bb ~amd64
+#sys-fs/mdev-like-a-boss ~amd64

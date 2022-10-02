@@ -1,0 +1,2 @@
+#my wifi using tkip encryption
+net-wireless/wpa_supplicant  tkip wps wep

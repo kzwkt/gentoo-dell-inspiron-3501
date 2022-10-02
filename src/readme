@@ -1,1 +1,13 @@
 apps from github/sources
+
+instead of installing 
+
+ln -s   ~/src/instantWM/instantwm  ~/.local/bin/idwm
+
+ln -s  ~/src/instantMENU/instantmenu  ~/.local/bin/instantmenu
+ln -s  ~/src/instantMENU/instantmenu_path ~/.local/bin/instantmenu_path
+ln -s  ~/src/instantMENU/instantmenu_run ~/.local/bin/instantmenu_run
+ln -s  ~/src/instantMENU/instantmenu_smartrun  ~/.local/bin/instantmenu_smartrun 
+ln -s  ~/src/instantMENU/itest ~/.local/bin/itest
+
+ln -s  ~/src/nnn/nnn ~/.local/bin/nnn

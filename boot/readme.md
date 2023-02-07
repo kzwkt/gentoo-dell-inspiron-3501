@@ -1,4 +1,4 @@
-using systemd boot/hummiboot 
+using systemd boot/gummiboot 
 
 nano gentoo.conf
 title Gentoo

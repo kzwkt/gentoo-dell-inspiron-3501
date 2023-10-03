@@ -1,0 +1,358 @@
+<?xml version="1.0"?>
+<labwc_config>
+  <core>
+    <decoration>server</decoration>
+    <gap>1</gap>
+    <adaptiveSync>no</adaptiveSync>
+    <reuseOutputMode>no</reuseOutputMode>
+  </core>
+  <theme>
+    <name>Arc-Clone</name>
+    <cornerRadius>0</cornerRadius>
+    <font>
+      <name>sans</name>
+      <size>10</size>
+      <slant>normal</slant>
+      <weight>normal</weight>
+    </font>
+  </theme>
+  <windowSwitcher show="yes" preview="yes" outlines="yes">
+    <fields>
+      <field content="type" width="25%"/>
+      <field content="identifier" width="25%"/>
+      <field content="title" width="50%"/>
+    </fields>
+  </windowSwitcher>
+  <resistance>
+    <screenEdgeStrength>20</screenEdgeStrength>
+  </resistance>
+  <resize popupShow="Never"/>
+  <focus>
+    <followMouse>no</followMouse>
+    <followMouseRequiresMovement>yes</followMouseRequiresMovement>
+    <raiseOnFocus>no</raiseOnFocus>
+  </focus>
+  <snapping>
+    <range>1</range>
+    <topMaximize>yes</topMaximize>
+  </snapping>
+  <desktops>
+    <popupTime>1000</popupTime>
+    <names>
+      <name>1</name>
+      <name>2</name>
+      <name>3</name>
+      <name>4</name>
+    </names>
+  </desktops>
+  <keyboard>
+    <repeatRate>25</repeatRate>
+    <repeatDelay>600</repeatDelay>
+    <keybind key="W-1">
+      <action name="GoToDesktop">
+        <to>1</to>
+      </action>
+    </keybind>
+    <keybind key="W-2">
+      <action name="GoToDesktop">
+        <to>2</to>
+      </action>
+    </keybind>
+    <keybind key="W-3">
+      <action name="GoToDesktop">
+        <to>3</to>
+      </action>
+    </keybind>
+    <keybind key="W-4">
+      <action name="GoToDesktop">
+        <to>4</to>
+      </action>
+    </keybind>
+    <keybind key="W-S-exclam">
+      <action name="SendToDesktop">
+        <to>1</to>
+        <follow>no</follow>
+      </action>
+    </keybind>
+    <keybind key="W-S-at">
+      <action name="SendToDesktop">
+        <to>2</to>
+        <follow>no</follow>
+      </action>
+    </keybind>
+    <keybind key="W-S-numbersign">
+      <action name="SendToDesktop">
+        <to>3</to>
+        <follow>no</follow>
+      </action>
+    </keybind>
+    <keybind key="W-S-dollar">
+      <action name="SendToDesktop">
+        <to>4</to>
+        <follow>no</follow>
+      </action>
+    </keybind>
+    <keybind key="W-a">
+      <action name="ToggleMaximize"/>
+    </keybind>
+    <keybind key="W-d">
+      <action name="Execute" command="wofi --show drun -I"/>
+    </keybind>
+    <keybind key="W-e">
+      <action name="Execute" command="foot -a nnn fm"/>
+    </keybind>
+    <keybind key="W-i">
+      <action name="Execute" command="foot nano /home/kai/.config/labwc/rc.xml"/>
+    </keybind>
+    <keybind key="W-S-i">
+      <action name="Execute" command="foot nano /home/kai/.config/sfwbar/sfwbar.config"/>
+    </keybind>
+    <keybind key="W-m">
+      <action name="Execute" command="wmn"/>
+    </keybind>
+    <keybind key="W-S-m">
+      <action name="Execute" command="wum"/>
+    </keybind>
+    <keybind key="W-q">
+      <action name="Close"/>
+    </keybind>
+    <keybind key="W-S-r">
+      <action name="Reconfigure"/>
+    </keybind>
+    <keybind key="W-Return">
+      <action name="Execute" command="foot"/>
+    </keybind>
+    <keybind key="A-Left">
+      <action name="MoveToEdge" direction="left"/>
+    </keybind>
+    <keybind key="A-Right">
+      <action name="MoveToEdge" direction="right"/>
+    </keybind>
+    <keybind key="A-Up">
+      <action name="MoveToEdge" direction="up"/>
+    </keybind>
+    <keybind key="A-Down">
+      <action name="MoveToEdge" direction="down"/>
+    </keybind>
+    <keybind key="W-Left">
+      <action name="SnapToEdge" direction="left"/>
+    </keybind>
+    <keybind key="W-Right">
+      <action name="SnapToEdge" direction="right"/>
+    </keybind>
+    <keybind key="W-Up">
+      <action name="SnapToEdge" direction="up"/>
+    </keybind>
+    <keybind key="W-Down">
+      <action name="SnapToEdge" direction="down"/>
+    </keybind>
+    <keybind key="A-Space">
+      <action name="ShowMenu" menu="client-menu"/>
+    </keybind>
+    <keybind key="A-Tab">
+      <action name="NextWindow"/>
+    </keybind>
+    <keybind key="XF86_AudioLowerVolume">
+      <action name="Execute" command="amixer sset Master 5%-"/>
+    </keybind>
+    <keybind key="XF86_AudioRaiseVolume">
+      <action name="Execute" command="amixer sset Master 5%+"/>
+    </keybind>
+    <keybind key="XF86_AudioMute">
+      <action name="Execute" command="amixer sset Master toggle"/>
+    </keybind>
+    <keybind key="XF86_MonBrightnessUp">
+      <action name="Execute" command="light -A 2%"/>
+    </keybind>
+    <keybind key="XF86_MonBrightnessDown">
+      <action name="Execute" command="light -U 2%"/>
+    </keybind>
+  </keyboard>
+  <mouse>
+    <!-- time is in ms -->
+    <doubleClickTime>500</doubleClickTime>
+    <scrollFactor>1.0</scrollFactor>
+    <context name="Frame">
+      <mousebind button="A-Left" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+      <mousebind button="A-Left" action="Drag">
+        <action name="Move"/>
+      </mousebind>
+      <mousebind button="A-Right" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+      <mousebind button="A-Right" action="Drag">
+        <action name="Resize"/>
+      </mousebind>
+    </context>
+    <context name="Top">
+      <mousebind button="Left" action="Drag">
+        <action name="Resize"/>
+      </mousebind>
+    </context>
+    <context name="Left">
+      <mousebind button="Left" action="Drag">
+        <action name="Resize"/>
+      </mousebind>
+    </context>
+    <context name="Right">
+      <mousebind button="Left" action="Drag">
+        <action name="Resize"/>
+      </mousebind>
+    </context>
+    <context name="Bottom">
+      <mousebind button="Left" action="Drag">
+        <action name="Resize"/>
+      </mousebind>
+    </context>
+    <context name="TRCorner">
+      <mousebind button="Left" action="Drag">
+        <action name="Resize"/>
+      </mousebind>
+    </context>
+    <context name="BRCorner">
+      <mousebind button="Left" action="Drag">
+        <action name="Resize"/>
+      </mousebind>
+    </context>
+    <context name="TLCorner">
+      <mousebind button="Left" action="Drag">
+        <action name="Resize"/>
+      </mousebind>
+    </context>
+    <context name="BLCorner">
+      <mousebind button="Left" action="Drag">
+        <action name="Resize"/>
+      </mousebind>
+    </context>
+    <context name="TitleBar">
+      <mousebind button="Left" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+      <mousebind button="Right" action="Click">
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="ShowMenu" menu="client-menu"/>
+      </mousebind>
+    </context>
+    <context name="Title">
+      <mousebind button="Left" action="Drag">
+        <action name="Move"/>
+      </mousebind>
+      <mousebind button="Left" action="DoubleClick">
+        <action name="ToggleMaximize"/>
+      </mousebind>
+    </context>
+    <context name="Maximize">
+      <mousebind button="Left" action="Click">
+        <action name="Focus"/>
+        <action name="Raise"/>
+        <action name="ToggleMaximize"/>
+      </mousebind>
+    </context>
+    <context name="WindowMenu">
+      <mousebind button="Left" action="Click">
+        <action name="ShowMenu" menu="client-menu"/>
+      </mousebind>
+    </context>
+    <context name="Iconify">
+      <mousebind button="left" action="Click">
+        <action name="Iconify"/>
+      </mousebind>
+    </context>
+    <context name="Close">
+      <mousebind button="Left" action="Click">
+        <action name="Close"/>
+      </mousebind>
+    </context>
+    <context name="Client">
+      <mousebind button="Left" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+      <mousebind button="Middle" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+      <mousebind button="Right" action="Press">
+        <action name="Focus"/>
+        <action name="Raise"/>
+      </mousebind>
+    </context>
+    <context name="Root">
+      <mousebind button="Left" action="Press">
+        <action name="ShowMenu" menu="root-menu"/>
+      </mousebind>
+      <mousebind button="Right" action="Press">
+        <action name="ShowMenu" menu="root-menu"/>
+      </mousebind>
+      <mousebind button="Middle" action="Press">
+        <action name="ShowMenu" menu="root-menu"/>
+      </mousebind>
+      <mousebind direction="Up" action="Scroll">
+        <action name="GoToDesktop" to="left"/>
+      </mousebind>
+      <mousebind direction="Down" action="Scroll">
+        <action name="GoToDesktop" to="right"/>
+      </mousebind>
+    </context>
+  </mouse>
+  <libinput>
+    <device category="">
+      <naturalScroll>no</naturalScroll>
+      <leftHanded/>
+      <pointerSpeed/>
+      <accelProfile/>
+      <tap>yes</tap>
+      <tapButtonMap/>
+      <middleEmulation/>
+      <disableWhileTyping/>
+    </device>
+  </libinput>
+  <!--
+    # Window Rules
+    #   - Criteria can consist of 'identifier' or 'title' or both (in which case
+    #     AND logic is used).
+    #   - 'identifier' relates to app_id for native Wayland windows and WM_CLASS
+    #     for XWayland clients.
+    #   - Criteria can also contain `matchOnce="true"` meaning that the rule
+    #     must only apply to the first instance of the window with that
+    #     particular 'identifier' or 'title'.
+    #   - Matching against patterns with '*' (wildcard) and '?' (joker) is
+    #     supported. Pattern matching is case-insensitive.
+
+    <windowRules>
+      <windowRule identifier="*"><action name="Maximize"/></windowRule>
+      <windowRule identifier="foo" serverDecoration="yes"/>
+      <windowRule title="bar" serverDecoration="yes"/>
+      <windowRule identifier="baz" title="quax" serverDecoration="yes"/>
+    </windowRules>
+
+    # Example below for `lxqt-panel` and `pcmanfm-qt \-\-desktop`
+    # where 'matchOnce' is used to avoid applying rule to the panel configuration
+    # window with the same 'app_id'
+
+    <windowRules>
+      <windowRule identifier="lxqt-panel" matchOnce="true">
+        <skipTaskbar>yes</skipTaskbar>
+        <action name="MoveTo" x="0" y="0" />
+        <action name="ToggleAlwaysOnTop"/>
+      </windowRule>
+      <windowRule title="pcmanfm-desktop*">
+        <skipTaskbar>yes</skipTaskbar>
+        <skipWindowSwitcher>yes</skipWindowSwitcher>
+        <action name="MoveTo" x="0" y="0" />
+        <action name="ToggleAlwaysOnBottom"/>
+      </windowRule>
+    </windowRules>
+  -->
+  <windowRules>
+    <windowRule title="mpv">
+      <action name="ToggleAlwaysOnTop"/>
+    </windowRule>
+  </windowRules>
+</labwc_config>

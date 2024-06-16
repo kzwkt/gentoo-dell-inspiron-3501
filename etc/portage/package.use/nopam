@@ -1,3 +1,0 @@
-#no su binary without pam
-# udev for getting FSTYPE using lsblk
-sys-apps/util-linux -su  udev

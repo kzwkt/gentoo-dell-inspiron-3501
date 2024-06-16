@@ -1,8 +1,0 @@
-app-text/mupdf -javascript  X
-# required by x11-misc/rofi-1.7.3-r1::gentoo
-# required by x11-misc/rofi (argument)
->=x11-libs/libxkbcommon-1.4.1 X
-# required by x11-misc/rofi-1.7.3-r1::gentoo
-# required by x11-misc/rofi (argument)
->=x11-libs/pango-1.50.9 X
-

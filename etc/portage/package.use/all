@@ -1,8 +1,20 @@
 app-admin/doas persist
-media-libs/mesa vaapi zink
+
+dev-libs/light udev
+sys-apps/util-linux   udev
+sys-devel/gcc -zstd
+sys-apps/openrc -netifrc
+net-wireless/iwd standalone -monitor
+
+
+media-libs/mesa vaapi 
+x11-libs/libdrm udev
 sys-auth/seatd server builtin
 gui-wm/sway -swaynag
 x11-misc/i3blocks -contrib
-media-video/mpv -xv alsa vaapi 
-media-video/ffmpeg  vaapi alsa  
-dev-libs/light udev
+media-video/mpv -xv alsa vaapi drm lcms
+media-video/ffmpeg  vaapi alsa  mp3 libdrm lcms vorbis
+media-libs/freetype  harfbuzz
+app-misc/nnn -pcre
+app-text/mupdf -javascript
+app-text/zathura-pdf-mupdf -javascript

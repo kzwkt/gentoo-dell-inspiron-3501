@@ -11,3 +11,9 @@ ln -s  ~/src/instantMENU/instantmenu_smartrun  ~/.local/bin/instantmenu_smartrun
 ln -s  ~/src/instantMENU/itest ~/.local/bin/itest
 
 ln -s  ~/src/nnn/nnn ~/.local/bin/nnn
+
+
+shim.c provides x11 symbol for pure wayland gentoo for firefox with use=-X
+
+gcc -shared -o shim.so -fPIC shim.c
+export LD_PRELOAD=shim.so firefox

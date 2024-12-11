@@ -1,0 +1,23 @@
+#include <stdlib.h>
+
+// Define a macro to declare empty functions
+#define DECLARE_EMPTY_FUNC(name) void name() {}
+
+// Declare empty functions for specific X11 functions used by Firefox
+DECLARE_EMPTY_FUNC(gdk_x11_display_get_xdisplay)
+DECLARE_EMPTY_FUNC(gdk_x11_get_default_root_xwindow)
+DECLARE_EMPTY_FUNC(gdk_x11_get_default_xdisplay)
+DECLARE_EMPTY_FUNC(cairo_xlib_surface_create)
+DECLARE_EMPTY_FUNC(gdk_x11_xatom_to_atom)
+DECLARE_EMPTY_FUNC(gdk_x11_window_get_xid)
+DECLARE_EMPTY_FUNC(gdk_x11_get_xatom_by_name_for_display)
+DECLARE_EMPTY_FUNC(gdk_x11_display_get_user_time)
+DECLARE_EMPTY_FUNC(gdk_x11_screen_supports_net_wm_hint)
+DECLARE_EMPTY_FUNC(gdk_x11_screen_get_screen_number)
+DECLARE_EMPTY_FUNC(gdk_x11_screen_lookup_visual)
+DECLARE_EMPTY_FUNC(gdk_x11_get_xatom_by_name)
+DECLARE_EMPTY_FUNC(gdk_x11_window_lookup_for_display)
+DECLARE_EMPTY_FUNC(gdk_x11_get_server_time)
+DECLARE_EMPTY_FUNC(gdk_x11_atom_to_xatom)
+DECLARE_EMPTY_FUNC(gdk_x11_lookup_xdisplay)
+DECLARE_EMPTY_FUNC(gdk_x11_set_sm_client_id)

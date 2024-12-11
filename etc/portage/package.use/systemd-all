@@ -1,0 +1,20 @@
+app-admin/doas persist
+app-misc/nnn -pcre
+app-text/mupdf -javascript
+app-text/zathura-pdf-mupdf -javascript
+
+media-libs/freetype  harfbuzz
+media-video/ffmpeg  vaapi   mp3 libdrm lcms vorbis
+media-video/mpv -xv  vaapi drm lcms
+
+net-wireless/iwd -monitor standalone
+
+sys-apps/systemd boot
+sys-apps/systemd-utils boot sysusers
+
+sys-devel/llvm ncurses 
+
+media-libs/mesa zink vaapi
+
+gui-wm/sway -swaynag
+x11-misc/i3blocks -contrib

@@ -16,4 +16,8 @@ ln -s  ~/src/nnn/nnn ~/.local/bin/nnn
 shim.c provides x11 symbol for pure wayland gentoo for firefox with use=-X
 
 gcc -shared -o shim.so -fPIC shim.c
-export LD_PRELOAD=shim.so firefox
+
+
+firefox.sh
+export LD_PRELOAD=/home/k/src/shim.so 
+/home/k/opt/firefox/firefox

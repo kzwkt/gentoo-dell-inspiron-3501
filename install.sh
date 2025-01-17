@@ -8,11 +8,11 @@ wget --no-clobber https://distfiles.gentoo.org/releases/amd64/autobuilds/"$url"
 
 
 gentoo-chroot() {
-  mount --bind /etc/resolv.conf /"$mp"/etc/resolv.conf
-  mount --rbind /dev /mnt/dev && mount --make-rslave /"$mp"/dev
-  mount --rbind /dev/pts /"$mp"/dev/pts && mount --make-rslave /"$mp"/dev/pts
-  mount --rbind /proc /"$mp"/proc && mount --make-rslave /mnt/proc
-  mount --rbind /sys /"$mp"/sys && mount --make-rslave /"$mp"/sys
+  mount --bind /etc/resolv.conf "$mp"/etc/resolv.conf
+  mount --rbind /dev "$mp"/dev && mount --make-rslave "$mp"/dev
+  mount --rbind /dev/pts "$mp"/dev/pts && mount --make-rslave "$mp"/dev/pts
+  mount --rbind /proc "$mp"/proc && mount --make-rslave "$mp"/proc
+  mount --rbind /sys "$mp"/sys && mount --make-rslave "$mp"/sys
 }
 
  gentoo-chroot

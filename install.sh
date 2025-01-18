@@ -3,7 +3,7 @@ mp=/mnt
 url=$(curl -s https://distfiles.gentoo.org/releases/amd64/autobuilds/latest-stage3-amd64-nomultilib-openrc.txt | grep -oP '^\d{8}T\d{6}Z/.*\.tar\.xz')
 filen="${url##*/}"
 wget --no-clobber https://distfiles.gentoo.org/releases/amd64/autobuilds/"$url"
-
+mkdir -p $mp
  tar xpf $filen --xattrs-include='*.*' --numeric-owner -C "$mp"
 
 

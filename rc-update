@@ -5,5 +5,7 @@ rc-update del hwclock boot
 rc-update del modules boot
 rc-update del netmount default
 rc-update del save-keymaps boot
+rc-update del keymaps boot
 rc-update del save-termencoding boot
 rc-update del swap boot
+rc-update del local default nonetwork

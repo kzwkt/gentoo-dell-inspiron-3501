@@ -7,5 +7,30 @@ rc-update del netmount default
 rc-update del save-keymaps boot
 rc-update del keymaps boot
 rc-update del save-termencoding boot
+rc-update del termencoding boot
 rc-update del swap boot
 rc-update del local default nonetwork
+rc-update del root boot
+
+these are just symlinks in _ to /etc/init.d/
+ ls /etc/runlevels/*/*
+/etc/runlevels/boot/bootmisc
+/etc/runlevels/boot/fsck
+/etc/runlevels/boot/localmount
+/etc/runlevels/boot/loopback
+/etc/runlevels/boot/mtab
+/etc/runlevels/boot/procfs
+/etc/runlevels/boot/root
+/etc/runlevels/boot/seedrng
+/etc/runlevels/boot/sysctl
+/etc/runlevels/boot/systemd-tmpfiles-setup
+/etc/runlevels/shutdown/killprocs
+/etc/runlevels/shutdown/mount-ro
+/etc/runlevels/shutdown/savecache
+/etc/runlevels/sysinit/cgroups
+/etc/runlevels/sysinit/devfs
+/etc/runlevels/sysinit/kmod-static-nodes
+/etc/runlevels/sysinit/sysfs
+/etc/runlevels/sysinit/systemd-tmpfiles-setup-dev
+/etc/runlevels/sysinit/udev
+/etc/runlevels/sysinit/udev-trigger

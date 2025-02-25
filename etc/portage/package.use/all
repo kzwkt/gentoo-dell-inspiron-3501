@@ -12,7 +12,6 @@ gui-wm/sway -swaynag
 sys-auth/seatd server
 gnome-base/librsvg -vala
 
-llvm-core/libclc VIDEO_CARDS=radeonsi
 x11-misc/i3blocks -contrib
 media-libs/freetype  harfbuzz
 media-video/mpv -xv -libmpv  alsa vaapi drm lcms 

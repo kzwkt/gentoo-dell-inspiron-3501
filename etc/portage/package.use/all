@@ -1,20 +1,22 @@
 app-admin/doas persist
 
 dev-libs/light udev
-sys-apps/util-linux   udev
-sys-devel/gcc -zstd
-sys-apps/openrc -netifrc
+#sys-devel/gcc -zstd
+sys-apps/openrc -netifrc -sysvinit sysv-utils
 net-wireless/iwd standalone -monitor
 
-
-media-libs/mesa vaapi 
-x11-libs/libdrm udev
-sys-auth/seatd server builtin
-gui-wm/sway -swaynag
-x11-misc/i3blocks -contrib
-media-video/mpv -xv alsa vaapi drm lcms
-media-video/ffmpeg  vaapi alsa  mp3 libdrm lcms vorbis
-media-libs/freetype  harfbuzz
+sys-apps/systemd-utils -kmod
 app-misc/nnn -pcre
+
+gui-wm/sway -swaynag
+sys-auth/seatd server
+gnome-base/librsvg -vala
+
+llvm-core/libclc VIDEO_CARDS=radeonsi
+x11-misc/i3blocks -contrib
+media-libs/freetype  harfbuzz
+media-video/mpv -xv -libmpv  alsa vaapi drm lcms 
+media-video/ffmpeg  vaapi alsa  mp3 libdrm lcms vorbis
+media-libs/libva-intel-media-driver redistributable
 app-text/mupdf -javascript
 app-text/zathura-pdf-mupdf -javascript

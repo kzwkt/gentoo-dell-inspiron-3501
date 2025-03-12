@@ -21,3 +21,7 @@ emerge --sync
 
 
 emerge -a iwd
+
+
+features FEATURES="noman nodoc noinfo"
+-man use flag 

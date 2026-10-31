@@ -1,3 +1,7 @@
 to make ff run without dbus test
 
 got these .so files from devuan linux 
+
+gen-stub.sh x11 dummy function to provide symbol
+
+ffox.sh , use stub .so file for pure wayland firefox via mozilla tarball 
